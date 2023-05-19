@@ -12,7 +12,9 @@
 
 <h3 align="center"> 📚 Blog </h3>
 <div align="center">
-<img src="http://img.shields.io/badge/-Tistory%20blog-black?style=for-the-badg&logo=Tistory&link=https://code-list.tistory.com/"/>
+  
+[![TistoryBlog](http://img.shields.io/badge/-Tistory%20blog-black?style=for-the-badg&logo=Tistory&link=https://code-list.tistory.com/)](https://code-list.tistory.com/)
+  
 </div>
 
 ---
