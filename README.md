@@ -1,5 +1,5 @@
 ### Hi there 👋
-<a href="버튼을 눌렀을 때 이동할 링크" target="_blank"><img src="https://img.shields.io/badge/#6DB33F?style=springboot&logo=springboot&logoColor=#6DB33F"/></a>
+<img src="https://img.shields.io/badge/springboot-#6DB33F?style=for-the-badge&logo=springboot&logoColor=white">
 <!--
 **namest504/namest504** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
