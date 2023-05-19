@@ -10,6 +10,11 @@
 <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/>  <img src="https://img.shields.io/badge/DOCKER-2496ED?style=flat&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white"/> 
 </div>
 
+<h3 align="center"> 📚 Blog </h3>
+<div align="center">
+<img src="http://img.shields.io/badge/-Tistory%20blog-black?style=for-the-badg&logo=Tistory&link=https://code-list.tistory.com/"/>
+</div>
+
 ---
 
 <div align="center">
