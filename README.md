@@ -1,19 +1,22 @@
 # For Being BackEnd Engineer ❗️
 
+
+
 <img align='right' src="https://github-readme-stats.vercel.app/api?username=namest504&show_icons=true&theme=github_dark">
+
 ### 💻Languages
 
 <img src="https://img.shields.io/badge/Java-007396.svg?&style=flat&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white"/>
 ---
 
-### Techs
+### 🎓Techs
 
 <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/>  <img src="https://img.shields.io/badge/DOCKER-2496ED?style=flat&logo=docker&logoColor=white"/> 
 ---
 
-### Tools
+### 🌍Tools
 
-<img src="https://img.shields.io/badge/amazonaws-232F3E?style=flat&logo=AWS&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white"/> 
+<img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white"/> 
 ---
 <!-- ![List's GitHub stats](https://github-readme-stats.vercel.app/api?username=namest504&show_icons=true&theme=github_dark) -->
 
