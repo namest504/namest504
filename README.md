@@ -1,23 +1,23 @@
-# For Being BackEnd Engineer ❗️
+<h1 align="center"> For Being BackEnd Engineer ❗️ </h1>
 
 
 
 <img align='right' src="https://github-readme-stats.vercel.app/api?username=namest504&show_icons=true&theme=github_dark">
 
-### 💻 Languages
-
+<h3 align="center"> 💻 Languages </h3>
+<div align="center">
 <img src="https://img.shields.io/badge/Java-FF0000.svg?&style=flat&logo=Java&logoColor=white"/> <img src="https://img.shields.io/badge/python-3776AB?style=flat&logo=python&logoColor=white"/>
----
+</div>
 
-### 🎓 Techs
+<h3 align="center"> 🎓 Techs </h3>
+<div align="center">
+<img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/>  <img src="https://img.shields.io/badge/DOCKER-2496ED?style=flat&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white"/> 
+</div>
 
-<img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/>  <img src="https://img.shields.io/badge/DOCKER-2496ED?style=flat&logo=docker&logoColor=white"/> 
----
+<!-- <h3 align="center"> 🌍 Tools </h3>
+<div align="center">
 
-### 🌍 Tools
-
-<img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white"/> 
----
+</div> -->
 <!-- ![List's GitHub stats](https://github-readme-stats.vercel.app/api?username=namest504&show_icons=true&theme=github_dark) -->
 
 <!--
