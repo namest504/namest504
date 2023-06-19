@@ -29,10 +29,25 @@
 <img src="https://github-readme-stats.vercel.app/api?username=namest504&show_icons=true&theme=github_dark">
 </div>
 -->
+<div align="center">
+  
+![List's GitHub stats](https://github-readme-stats.vercel.app/api?username=namest504&show_icons=true&theme=dark&layout=compact)
 
-![List's GitHub stats](https://github-readme-stats.vercel.app/api?username=namest504&show_icons=true&theme=dark)
+</div>
+
+<div align="center">
+<!--
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=namest504&layout=compact&hide=Shell,Ruby)](https://github.com/namest504/github-readme-stats)
+-->
+<!--
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=namest504&theme=dark)
+-->
+</div>
+
+<div align="center">
+  
 [![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=lst228)](https://solved.ac/lst228)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=namest504&layout=demo&theme=dark)
+</div>
 <!-- <h3 align="center"> 🌍 Tools </h3>
 <div align="center">
 
