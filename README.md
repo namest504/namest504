@@ -7,7 +7,7 @@
 
 <h3 align="center"> 🎓 Techs </h3>
 <div align="center">
-<img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/>  <img src="https://img.shields.io/badge/DOCKER-2496ED?style=flat&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white"/> 
+<img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=springboot&logoColor=white"/> <img src="https://img.shields.io/badge/MariaDB-003545?style=flat&logo=mariadb&logoColor=white"/>  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white"/> <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=white"/> <img src="https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white"/> 
 </div>
 
 <h3 align="center"> 📚 Blog </h3>
