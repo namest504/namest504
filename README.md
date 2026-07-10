@@ -1,3 +1,13 @@
+```go
+package namest504
+
+var (
+	role      = "backend engineer"
+	langs     = []string{"Java", "Go", "Python"}
+	interests = []string{"Spring internals", "data infrastructure"}
+)
+```
+
 ### Open Source Contributions
 
 * **Spring Boot**: Removed unnecessary stream opening in `BootZipCopyAction`, cutting redundant file I/O when the Gradle plugin packages archives ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
