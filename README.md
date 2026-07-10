@@ -1,11 +1,12 @@
 ### Open Source Contributions
 
-* **Spring Boot**: Optimized performance by removing unnecessary stream opening in `BootZipCopyAction` ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
-* **Spring Security**: Fixed case-sensitivity issue for `typ` values in `JwtTypeValidator` ([#18101](https://github.com/spring-projects/spring-security/pull/18101))
-* **Elastic Kibana**: Fixed default `perPage` option logic (Backported to v8.18+) ([#239073](https://github.com/elastic/kibana/pull/239073))
-* **Apache Beam**: Added schema field descriptions to Bigtable configuration ([#36344](https://github.com/apache/beam/pull/36344))
-* **Apache Gravitino**: Improved alias/version validation logic for model commands ([#8727](https://github.com/apache/gravitino/pull/8727))
-* **Nuclei Burp Plugin**: Implemented `pr-test` CI/CD workflows ([#124](https://github.com/projectdiscovery/nuclei-burp-plugin/pull/124))
+* **Spring Boot**: Removed unnecessary stream opening in `BootZipCopyAction`, cutting redundant file I/O when the Gradle plugin packages archives ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
+* **Spring Security**: Fixed `JwtTypeValidator` performing case-sensitive `typ` header checks, a behavior regression from Nimbus's `JOSEObjectTypeVerifier` — released in 6.5.7 ([#18101](https://github.com/spring-projects/spring-security/pull/18101))
+* **Elastic Kibana**: Fixed default `perPage` handling in the Saved Objects `PointInTimeFinder` — shipped in v8.19.8, v9.1.8, v9.2.2, and v9.3.0 ([#239073](https://github.com/elastic/kibana/pull/239073))
+* **Apache Beam**: Added `@SchemaFieldDescription` annotations to the Bigtable read/write schema transform configs so field docs surface in managed I/O ([#36344](https://github.com/apache/beam/pull/36344))
+* **Apache Gravitino**: Added alias/version validation to model version CLI commands, with unit tests covering `validate()` and `handle()` paths ([#8737](https://github.com/apache/gravitino/pull/8737))
+* **Exercises Dataset**: Contributed Korean translations for all 1,324 exercises, including the viewer language selector ([#27](https://github.com/hasaneyldrm/exercises-dataset/pull/27), merged via [118e4bd](https://github.com/hasaneyldrm/exercises-dataset/commit/118e4bd))
+* **Nuclei Burp Plugin**: Added a GitHub Actions workflow that runs unit tests on every pull request ([#124](https://github.com/projectdiscovery/nuclei-burp-plugin/pull/124))
 * **First Contributions**: Updated Korean localization for alt image text ([#105473](https://github.com/firstcontributions/first-contributions/pull/105473))
 
 ### Personal Projects
