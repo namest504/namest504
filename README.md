@@ -1,11 +1,28 @@
-```go
-package namest504
-
-var (
-	role      = "backend engineer"
-	langs     = []string{"Java", "Go", "Python"}
-	interests = []string{"Spring internals", "data infrastructure"}
-)
+```
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │  $ whoami                                                               │
+  │  SeungTaek Lim  (namest504)                                             │
+  │                                                                         │
+  │  $ cat about.txt                                                        │
+  │  backend engineer · South Korea                                         │
+  │                                                                         │
+  │  $ cat languages.txt                                                    │
+  │  Java   Go   Python                                                     │
+  │                                                                         │
+  │  $ cat interests.txt                                                    │
+  │  Spring internals · data infra · security · LLM                         │
+  │                                                                         │
+  │  $ git log --oneline --author=me                                        │
+  │  spring-boot          cut redundant file I/O in BootZipCopyAction       │
+  │  spring-security      fix case-sensitive typ check in JwtTypeValidator  │
+  │  kibana               fix default perPage in PointInTimeFinder          │
+  │  beam                 document Bigtable schema-transform configs        │
+  │  gravitino            validate alias/version in model CLI commands      │
+  │  nuclei-burp-plugin   add CI workflow running unit tests on PRs         │
+  │  exercises-dataset    add Korean translations for 1,324 exercises       │
+  │  first-contributions  update Korean localization for image alt text     │
+  │  █                                                                      │
+  └─────────────────────────────────────────────────────────────────────────┘
 ```
 
 ### Open Source Contributions
