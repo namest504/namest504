@@ -13,9 +13,9 @@
   │  Spring internals · data infra · security · LLM                         │
   │                                                                         │
   │  $ git log --oneline --author=me                                        │
+  │  pulsar               add message-based TableView builders (PIP-445)    │
   │  spring-boot          cut redundant file I/O in BootZipCopyAction       │
   │  spring-security      fix case-sensitive typ check in JwtTypeValidator  │
-  │  pulsar               add message-based TableView builders (PIP-445)    │
   │  kibana               fix default perPage in PointInTimeFinder          │
   │  beam                 document Bigtable schema-transform configs        │
   │  gravitino            validate alias/version in model CLI commands      │
@@ -29,9 +29,9 @@
 
 ### Open Source Contributions
 
+* **Apache Pulsar**: Implemented PIP-445, adding builder methods (`createMapped`/`createMappedAsync`) that build a `TableView` whose values are derived from full messages via a user-defined `TableViewMessageMapper` ([#24809](https://github.com/apache/pulsar/pull/24809))
 * **Spring Boot**: Removed unnecessary stream opening in `BootZipCopyAction`, cutting redundant file I/O when the Gradle plugin packages archives ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
 * **Spring Security**: Fixed `JwtTypeValidator` performing case-sensitive `typ` header checks, a behavior regression from Nimbus's `JOSEObjectTypeVerifier` — released in 6.5.7 ([#18101](https://github.com/spring-projects/spring-security/pull/18101))
-* **Apache Pulsar**: Implemented PIP-445, adding builder methods (`createMapped`/`createMappedAsync`) that build a `TableView` whose values are derived from full messages via a user-defined `TableViewMessageMapper` ([#24809](https://github.com/apache/pulsar/pull/24809))
 * **Elastic Kibana**: Fixed default `perPage` handling in the Saved Objects `PointInTimeFinder` — shipped in v8.19.8, v9.1.8, v9.2.2, and v9.3.0 ([#239073](https://github.com/elastic/kibana/pull/239073))
 * **Apache Beam**: Added `@SchemaFieldDescription` annotations to the Bigtable read/write schema transform configs so field docs surface in managed I/O ([#36344](https://github.com/apache/beam/pull/36344))
 * **Apache Gravitino**: Added alias/version validation to model version CLI commands, with unit tests covering `validate()` and `handle()` paths ([#8737](https://github.com/apache/gravitino/pull/8737))
