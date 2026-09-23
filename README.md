@@ -29,7 +29,9 @@
 
 ### Open Source Contributions
 
-* **Apache Pulsar**: Implemented PIP-445, adding builder methods (`createMapped`/`createMappedAsync`) that build a `TableView` whose values are derived from full messages via a user-defined `TableViewMessageMapper` ([#24809](https://github.com/apache/pulsar/pull/24809)); also fixed a v5 producer send that could hang indefinitely when its client was closing mid-send ([#26686](https://github.com/apache/pulsar/pull/26686))
+* **Apache Pulsar**
+  * Implemented PIP-445 — builder methods (`createMapped`/`createMappedAsync`) that build a `TableView` whose values are derived from full messages via a user-defined `TableViewMessageMapper` ([#24809](https://github.com/apache/pulsar/pull/24809))
+  * Fixed a v5 producer send that could hang indefinitely when its client was closing mid-send ([#26686](https://github.com/apache/pulsar/pull/26686))
 * **Spring Boot**: Removed unnecessary stream opening in `BootZipCopyAction`, cutting redundant file I/O when the Gradle plugin packages archives ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
 * **Spring Security**: Fixed `JwtTypeValidator` performing case-sensitive `typ` header checks, a behavior regression from Nimbus's `JOSEObjectTypeVerifier` — released in 6.5.7 ([#18101](https://github.com/spring-projects/spring-security/pull/18101))
 * **Elastic Kibana**: Fixed default `perPage` handling in the Saved Objects `PointInTimeFinder` — shipped in v8.19.8, v9.1.8, v9.2.2, and v9.3.0 ([#239073](https://github.com/elastic/kibana/pull/239073))
