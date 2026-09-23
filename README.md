@@ -14,6 +14,7 @@
   │                                                                         │
   │  $ git log --oneline --author=me                                        │
   │  pulsar               add message-based TableView builders (PIP-445)    │
+  │  pulsar               fix v5 send hang while client is closing          │
   │  spring-boot          cut redundant file I/O in BootZipCopyAction       │
   │  spring-security      fix case-sensitive typ check in JwtTypeValidator  │
   │  kibana               fix default perPage in PointInTimeFinder          │
