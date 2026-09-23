@@ -56,6 +56,12 @@
 * **CVE-2025-66478-Exploit-Poc**
   * Proof of Concept (PoC) exploit code for CVE-2025-66478. ([View](https://github.com/namest504/CVE-2025-66478-Exploit-Poc))
 * **termtype**
-  * A minimal, terminal-based typing practice tool. ([View](https://github.com/namest504/termtype))
+  * A minimal, terminal-based typing practice tool, installable via a Homebrew tap. ([View](https://github.com/namest504/termtype))
 * **web-graph-agent**
   * An LLM agent service powered by LangGraph for web graph analysis and interaction. ([View](https://github.com/namest504/web-graph-agent))
+* **ddakji**
+  * A markdown-based sticky notes desktop app built with Tauri, a Windows 11 Sticky Notes replacement. ([View](https://github.com/namest504/ddakji))
+* **dua**
+  * A command-line disk usage analyzer written in Go, with size-sorted listing and a recursive tree view. ([View](https://github.com/namest504/dua))
+* **ts-go-benchmark**
+  * A benchmark comparing the TypeScript compiler `tsc` with Microsoft's Go port `tsgo`. ([View](https://github.com/namest504/ts-go-benchmark))
