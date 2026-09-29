@@ -13,8 +13,10 @@
   │  Spring internals · data infra · security · LLM                         │
   │                                                                         │
   │  $ git log --oneline --author=me                                        │
+  │  gradle               show build progress on Windows Terminal taskbar   │
   │  pulsar               add message-based TableView builders (PIP-445)    │
   │  pulsar               fix v5 send hang while client is closing          │
+  │  pulsar               fix flaky v5 consumer ack-watermark test          │
   │  spring-boot          cut redundant file I/O in BootZipCopyAction       │
   │  spring-security      fix case-sensitive typ check in JwtTypeValidator  │
   │  kibana               fix default perPage in PointInTimeFinder          │
@@ -30,9 +32,12 @@
 
 ### Open Source Contributions
 
+* **Gradle**
+  * Added Windows Terminal detection (`WT_SESSION`) so the build progress is also reported to the Windows taskbar, including from WSL shells — merged for 9.9.0 ([#39260](https://github.com/gradle/gradle/pull/39260))
 * **Apache Pulsar**
   * Implemented PIP-445 — builder methods (`createMapped`/`createMappedAsync`) that build a `TableView` whose values are derived from full messages via a user-defined `TableViewMessageMapper` ([#24809](https://github.com/apache/pulsar/pull/24809))
   * Fixed a v5 producer send that could hang indefinitely when its client was closing mid-send ([#26686](https://github.com/apache/pulsar/pull/26686))
+  * Fixed a flaky v5 consumer test (`V5StreamConsumerAckWatermarkTest`) where a cursor rewind could overtake the cumulative ack it was meant to follow, by waiting for the ack to be persisted before rewinding ([#26684](https://github.com/apache/pulsar/pull/26684))
 * **Spring Boot**
   * Removed unnecessary stream opening in `BootZipCopyAction`, cutting redundant file I/O when the Gradle plugin packages archives ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
 * **Spring Security**
