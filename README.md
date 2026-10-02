@@ -13,6 +13,7 @@
   │  Spring internals · data infra · security · LLM                         │
   │                                                                         │
   │  $ git log --oneline --author=me                                        │
+  │  openclaw             retry when the model writes a tool call as text   │
   │  gradle               show build progress on Windows Terminal taskbar   │
   │  pulsar               add message-based TableView builders (PIP-445)    │
   │  pulsar               fix v5 send hang while client is closing          │
@@ -32,6 +33,8 @@
 
 ### Open Source Contributions
 
+* **OpenClaw**
+  * Fixed agent runs ending with a "couldn't generate a response" warning when the model wrote a tool call as plain text instead of a structured call, by retrying the turn once ([#156342](https://github.com/openclaw/openclaw/pull/156342))
 * **Gradle**
   * Added Windows Terminal detection (`WT_SESSION`) so the build progress is also reported to the Windows taskbar, including from WSL shells — merged for 9.9.0 ([#39260](https://github.com/gradle/gradle/pull/39260))
 * **Apache Pulsar**
