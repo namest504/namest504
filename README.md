@@ -1,76 +1,44 @@
-```
-  ┌─────────────────────────────────────────────────────────────────────────┐
-  │  $ whoami                                                               │
-  │  SeungTaek Lim  (namest504)                                             │
-  │                                                                         │
-  │  $ cat about.txt                                                        │
-  │  backend engineer · South Korea                                         │
-  │                                                                         │
-  │  $ cat languages.txt                                                    │
-  │  Java   Go   Python                                                     │
-  │                                                                         │
-  │  $ cat interests.txt                                                    │
-  │  Spring internals · data infra · security · LLM                         │
-  │                                                                         │
-  │  $ git log --oneline --author=me                                        │
-  │  openclaw             retry when the model writes a tool call as text   │
-  │  gradle               show build progress on Windows Terminal taskbar   │
-  │  pulsar               add message-based TableView builders (PIP-445)    │
-  │  pulsar               fix v5 send hang while client is closing          │
-  │  pulsar               fix flaky v5 consumer ack-watermark test          │
-  │  spring-boot          cut redundant file I/O in BootZipCopyAction       │
-  │  spring-security      fix case-sensitive typ check in JwtTypeValidator  │
-  │  kibana               fix default perPage in PointInTimeFinder          │
-  │  beam                 document Bigtable schema-transform configs        │
-  │  gravitino            validate alias/version in model CLI commands      │
-  │  nuclei-burp-plugin   add CI workflow running unit tests on PRs         │
-  │  hadoop               fix missing space in a config error message       │
-  │  exercises-dataset    add Korean translations for 1,324 exercises       │
-  │  first-contributions  update Korean localization for image alt text     │
-  │  █                                                                      │
-  └─────────────────────────────────────────────────────────────────────────┘
-```
-
 ### Open Source Contributions
 
-* **OpenClaw**
-  * Fixed agent runs ending with a "couldn't generate a response" warning when the model wrote a tool call as plain text instead of a structured call, by retrying the turn once ([#156342](https://github.com/openclaw/openclaw/pull/156342))
-* **Gradle**
-  * Added Windows Terminal detection (`WT_SESSION`) so the build progress is also reported to the Windows taskbar, including from WSL shells — merged for 9.9.0 ([#39260](https://github.com/gradle/gradle/pull/39260))
-* **Apache Pulsar**
-  * Implemented PIP-445 — builder methods (`createMapped`/`createMappedAsync`) that build a `TableView` whose values are derived from full messages via a user-defined `TableViewMessageMapper` ([#24809](https://github.com/apache/pulsar/pull/24809))
-  * Fixed a v5 producer send that could hang indefinitely when its client was closing mid-send ([#26686](https://github.com/apache/pulsar/pull/26686))
-  * Fixed a flaky v5 consumer test (`V5StreamConsumerAckWatermarkTest`) where a cursor rewind could overtake the cumulative ack it was meant to follow, by waiting for the ack to be persisted before rewinding ([#26684](https://github.com/apache/pulsar/pull/26684))
-* **Spring Boot**
-  * Removed unnecessary stream opening in `BootZipCopyAction`, cutting redundant file I/O when the Gradle plugin packages archives ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
-* **Spring Security**
-  * Fixed `JwtTypeValidator` performing case-sensitive `typ` header checks, a behavior regression from Nimbus's `JOSEObjectTypeVerifier` — released in 6.5.7 ([#18101](https://github.com/spring-projects/spring-security/pull/18101))
-* **Elastic Kibana**
-  * Fixed default `perPage` handling in the Saved Objects `PointInTimeFinder` — shipped in v8.19.8, v9.1.8, v9.2.2, and v9.3.0 ([#239073](https://github.com/elastic/kibana/pull/239073))
-* **Apache Beam**
-  * Added `@SchemaFieldDescription` annotations to the Bigtable read/write schema transform configs so field docs surface in managed I/O ([#36344](https://github.com/apache/beam/pull/36344))
-* **Apache Gravitino**
-  * Added alias/version validation to model version CLI commands, with unit tests covering `validate()` and `handle()` paths ([#8737](https://github.com/apache/gravitino/pull/8737))
-* **Apache Hadoop**
-  * Fixed a missing space in the HDFS client error message for a negative `dfs.domain.socket.disable.interval.seconds` ([#8603](https://github.com/apache/hadoop/pull/8603))
-* **Exercises Dataset**
-  * Contributed Korean translations for all 1,324 exercises, including the viewer language selector ([#27](https://github.com/hasaneyldrm/exercises-dataset/pull/27), merged via [118e4bd](https://github.com/hasaneyldrm/exercises-dataset/commit/118e4bd))
-* **Nuclei Burp Plugin**
-  * Added a GitHub Actions workflow that runs unit tests on every pull request ([#124](https://github.com/projectdiscovery/nuclei-burp-plugin/pull/124))
-* **First Contributions**
-  * Updated Korean localization for alt image text ([#105473](https://github.com/firstcontributions/first-contributions/pull/105473))
+* **[Apache Pulsar](https://github.com/apache/pulsar)**
+  * Added `createMapped`/`createMappedAsync` to build a `TableView` from full messages via `TableViewMessageMapper` (PIP-445) ([#24809](https://github.com/apache/pulsar/pull/24809))
+  * Replaced the blocking `Thread.sleep` in `TableView` tail-read retries with a scheduled backoff; pending refreshes now fail on close ([#26672](https://github.com/apache/pulsar/pull/26672))
+  * Fixed a v5 producer send hanging when the client closes mid-send ([#26686](https://github.com/apache/pulsar/pull/26686))
+  * Fixed flaky `V5StreamConsumerAckWatermarkTest`: cursor rewind raced the cumulative ack ([#26684](https://github.com/apache/pulsar/pull/26684))
+* **[OpenClaw](https://github.com/openclaw/openclaw)**
+  * Added a one-time retry when the model emits a tool call as plain text, instead of ending the run with "couldn't generate a response" ([#156342](https://github.com/openclaw/openclaw/pull/156342))
+* **[Gradle](https://github.com/gradle/gradle)**
+  * Added Windows Terminal (`WT_SESSION`) detection to report build progress on the taskbar, including from WSL ([#39260](https://github.com/gradle/gradle/pull/39260))
+* **[Spring Boot](https://github.com/spring-projects/spring-boot)**
+  * Removed redundant stream opening in `BootZipCopyAction` ([#47902](https://github.com/spring-projects/spring-boot/pull/47902))
+* **[Spring Security](https://github.com/spring-projects/spring-security)**
+  * Made the `JwtTypeValidator` `typ` check case-insensitive, fixing a regression from Nimbus `JOSEObjectTypeVerifier` ([#18101](https://github.com/spring-projects/spring-security/pull/18101))
+* **[Elastic Kibana](https://github.com/elastic/kibana)**
+  * Fixed default `perPage` in Saved Objects `PointInTimeFinder` ([#239073](https://github.com/elastic/kibana/pull/239073))
+* **[Apache Beam](https://github.com/apache/beam)**
+  * Added `@SchemaFieldDescription` to Bigtable read/write schema-transform configs ([#36344](https://github.com/apache/beam/pull/36344))
+* **[Apache Gravitino](https://github.com/apache/gravitino)**
+  * Added alias/version validation to model version CLI commands ([#8737](https://github.com/apache/gravitino/pull/8737))
+* **[Apache Hadoop](https://github.com/apache/hadoop)**
+  * Fixed a missing space in the HDFS client error for negative `dfs.domain.socket.disable.interval.seconds` ([#8603](https://github.com/apache/hadoop/pull/8603))
+* **[Exercises Dataset](https://github.com/hasaneyldrm/exercises-dataset)**
+  * Added Korean translations for all 1,324 exercises and a viewer language selector ([#27](https://github.com/hasaneyldrm/exercises-dataset/pull/27), merged via [118e4bd](https://github.com/hasaneyldrm/exercises-dataset/commit/118e4bd))
+* **[Nuclei Burp Plugin](https://github.com/projectdiscovery/nuclei-burp-plugin)**
+  * Added a GitHub Actions workflow running unit tests on PRs ([#124](https://github.com/projectdiscovery/nuclei-burp-plugin/pull/124))
+* **[First Contributions](https://github.com/firstcontributions/first-contributions)**
+  * Updated Korean image alt text ([#105473](https://github.com/firstcontributions/first-contributions/pull/105473))
 
 ### Personal Projects
 
-* **CVE-2025-66478-Exploit-Poc**
-  * Proof of Concept (PoC) exploit code for CVE-2025-66478. ([View](https://github.com/namest504/CVE-2025-66478-Exploit-Poc))
-* **termtype**
-  * A minimal, terminal-based typing practice tool, installable via a Homebrew tap. ([View](https://github.com/namest504/termtype))
-* **web-graph-agent**
-  * An LLM agent service powered by LangGraph for web graph analysis and interaction. ([View](https://github.com/namest504/web-graph-agent))
-* **ddakji**
-  * A markdown-based sticky notes desktop app built with Tauri, a Windows 11 Sticky Notes replacement. ([View](https://github.com/namest504/ddakji))
-* **dua**
-  * A command-line disk usage analyzer written in Go, with size-sorted listing and a recursive tree view. ([View](https://github.com/namest504/dua))
-* **ts-go-benchmark**
-  * A benchmark comparing the TypeScript compiler `tsc` with Microsoft's Go port `tsgo`. ([View](https://github.com/namest504/ts-go-benchmark))
+* **[CVE-2025-66478-Exploit-Poc](https://github.com/namest504/CVE-2025-66478-Exploit-Poc)**
+  * PoC exploit for CVE-2025-66478
+* **[termtype](https://github.com/namest504/termtype)**
+  * Terminal typing practice tool, Homebrew tap
+* **[web-graph-agent](https://github.com/namest504/web-graph-agent)**
+  * LangGraph-based LLM agent for web graph analysis
+* **[ddakji](https://github.com/namest504/ddakji)**
+  * Markdown sticky notes desktop app (Tauri), replacing Windows 11 Sticky Notes
+* **[dua](https://github.com/namest504/dua)**
+  * Disk usage analyzer CLI in Go, size-sorted list and tree view
+* **[ts-go-benchmark](https://github.com/namest504/ts-go-benchmark)**
+  * Benchmark of `tsc` vs Microsoft's Go port `tsgo`
