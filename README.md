@@ -6,7 +6,7 @@
 | **[Apache Hadoop](https://github.com/apache/hadoop)** | • Fixed a missing space in an HDFS client error message ([#8603](https://github.com/apache/hadoop/pull/8603)) |
 | **[Apache Beam](https://github.com/apache/beam)** | • Added field descriptions to Bigtable schema-transforms ([#36344](https://github.com/apache/beam/pull/36344)) |
 | **[Apache Gravitino](https://github.com/apache/gravitino)** | • Added alias/version checks to model version CLI commands ([#8737](https://github.com/apache/gravitino/pull/8737)) |
-| **[Spring Framework](https://github.com/spring-projects/spring-framework)** | • Made in-memory multipart `Part` content repeatable ([#37531](https://github.com/spring-projects/spring-framework/pull/37531)) |
+| **[Spring Framework](https://github.com/spring-projects/spring-framework)** | • Made in-memory multipart `Part` content repeatable ([#37531](https://github.com/spring-projects/spring-framework/pull/37531))<br>• Fixed a `@Retryable` default `maxDelay` overflow with `timeUnit` ([#37525](https://github.com/spring-projects/spring-framework/pull/37525)) |
 | **[Spring Boot](https://github.com/spring-projects/spring-boot)** | • Removed an unused `openStream()` call in `BootZipCopyAction` ([#47902](https://github.com/spring-projects/spring-boot/pull/47902)) |
 | **[Spring Security](https://github.com/spring-projects/spring-security)** | • Made `JwtTypeValidator` match `typ` case-insensitively ([#18101](https://github.com/spring-projects/spring-security/pull/18101)) |
 | **[OpenClaw](https://github.com/openclaw/openclaw)** | • Added a retry when a model writes a tool call as plain text ([#156342](https://github.com/openclaw/openclaw/pull/156342)) |
